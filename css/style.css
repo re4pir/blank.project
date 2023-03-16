@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Gotham Pro";
-  src: local("GothamPro-light"), url(/src/fonts/gothampro_light.ttf);
+  src: local("GothamPro-light"), url(fonts/gothampro_light.ttf);
   font-display: swap;
   font-weight: 100;
   font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Gotham Pro";
-  src: local("GothamPro-regular"), url(/src/fonts/gothampro.ttf);
+  src: local("GothamPro-regular"), url(fonts/gothampro.ttf);
   font-display: swap;
   font-weight: 300;
   font-style: normal;
@@ -16,14 +16,14 @@
 
 @font-face {
   font-family: "Gotham Pro";
-  src: local("GothamPro-medium"), url(/src/fonts/gothampro_medium.ttf);
+  src: local("GothamPro-medium"), url(fonts/gothampro_medium.ttf);
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: local("GothamPro-bold"), url(/src/fonts/gothampro_bold.ttf);
+  src: local("GothamPro-bold"), url(fonts/gothampro_bold.ttf);
   font-display: swap;
   font-weight: 700;
   font-style: normal;
@@ -31,7 +31,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat-light"), url(/src/fonts/Montserrat-Light.ttf);
+  src: local("Montserrat-light"), url(fonts/Montserrat-Light.ttf);
   font-display: swap;
   font-weight: 100;
   font-style: normal;
@@ -39,7 +39,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url(/src/fonts/Montserrat-Medium.ttf);
+  src: local("Montserrat"), url(fonts/Montserrat-Medium.ttf);
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -47,7 +47,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat-bold"), url(/src/fonts/Montserrat-Bold.ttf);
+  src: local("Montserrat-bold"), url(fonts/Montserrat-Bold.ttf);
   font-display: swap;
   font-weight: 700;
   font-style: normal;
@@ -55,7 +55,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat-semibold"), url(/src/fonts/Montserrat-SemiBold.ttf);
+  src: local("Montserrat-semibold"), url(fonts/Montserrat-SemiBold.ttf);
   font-display: swap;
   font-weight: 600;
   font-style: normal;
@@ -77,7 +77,7 @@ a {
   text-decoration: none;
 }
 
-img {
+/img {
   max-width: 100%;
 }
 
@@ -230,8 +230,8 @@ body {
   background-position: center center;
   background-size: cover;
   z-index: 0;
-  background: no-repeat 21.65% 56.37% url(/src/img/patch.svg), no-repeat 46.45% 17.9% url(/src/img/Ellipse\ 3.svg),
-    no-repeat 7.5% 69.1% url(/src/img/krestik.svg), no-repeat 90.6% 85% url(/src/img/Line\ 62.svg),
+  background: no-repeat 21.65% 56.37% url(/img/patch.svg), no-repeat 46.45% 17.9% url(/img/Ellipse\ 3.svg),
+    no-repeat 7.5% 69.1% url(/img/krestik.svg), no-repeat 90.6% 85% url(/img/Line\ 62.svg),
     linear-gradient(90deg, #e3fdf5 0%, #ffe6fa 100%);
 }
 
@@ -267,7 +267,7 @@ body {
   align-items: flex-start;
   padding: 9.5px 15px 11.5px;
   width: 242px;
-  background: no-repeat 94.1% 50% url(/src/img/Line\ 61.svg) #645cc3;
+  background: no-repeat 94.1% 50% url(/img/Line\ 61.svg) #645cc3;
   border-radius: 22px 30px 30px 0px;
 }
 
@@ -337,7 +337,7 @@ body {
   padding-left: 29px;
   text-align: center;
   color: #141414;
-  background: no-repeat 0% 1px url(/src/img/location.svg);
+  background: no-repeat 0% 1px url(/img/location.svg);
 }
 
 .section-template__underblock {
@@ -371,8 +371,8 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background: no-repeat 43.1% 76% url(/src/img/path_second.svg), no-repeat 84.3% 17.4% url(/src/img/Cricle_second.svg),
-    no-repeat 89.55% 83.8% url(/src/img/Krestik_second.svg) #645cc3;
+  background: no-repeat 43.1% 76% url(/img/path_second.svg), no-repeat 84.3% 17.4% url(/img/Cricle_second.svg),
+    no-repeat 89.55% 83.8% url(/img/Krestik_second.svg) #645cc3;
 }
 
 .section-second__conainer {
@@ -547,11 +547,11 @@ body {
 .section-cost__item:first-child {
   padding-top: 90.5px;
   padding-bottom: 31px;
-  background: no-repeat top right url(/src/img/EnjVPod.svg), #ffffff;
+  background: no-repeat top right url(/img/EnjVPod.svg), #ffffff;
 }
 
 .section-cost__item:nth-child(3) {
-  background: no-repeat top right url(/src/img/30sale.svg), #ffffff;
+  background: no-repeat top right url(/img/30sale.svg), #ffffff;
   margin-bottom: 75px;
 }
 
@@ -600,7 +600,7 @@ body {
 .section-cost__middle {
   padding: 14px 25px 10px 30px;
   margin-bottom: 26px;
-  background: no-repeat 41.4% 62% url(/src/img/Line\ 83.svg), #f7f5ff;
+  background: no-repeat 41.4% 62% url(/img/Line\ 83.svg), #f7f5ff;
   border-radius: 100px;
 }
 
@@ -615,7 +615,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
-  background-image: url("/src/img/Vector.svg");
+  background-image: url("/img/Vector.svg");
   background-repeat: no-repeat;
   background-position: 0.7% 67%;
 }
@@ -669,7 +669,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 90px;
-  background-image: url(/src/img/prev.svg);
+  background-image: url(/img/prev.svg);
   background-repeat: no-repeat;
   background-position: 49% 50%;
   margin-right: 6px;
@@ -679,7 +679,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 90px;
-  background-image: url(/src/img/Next.svg);
+  background-image: url(/img/Next.svg);
   background-repeat: no-repeat;
   background-position: 52% 50%;
 }
@@ -739,33 +739,33 @@ body {
 }
 
 .section-promotions__list-item:nth-child(1) {
-  background: no-repeat 8% 15% url(/src/img/Done_ring_round_light.svg), #f7f7f8;
+  background: no-repeat 8% 15% url(/img/Done_ring_round_light.svg), #f7f7f8;
 }
 
 .section-promotions__list-item:nth-child(2) {
-  background: no-repeat 8% 15% url(/src/img/calendar-tick.svg),
+  background: no-repeat 8% 15% url(/img/calendar-tick.svg),
     linear-gradient(90deg, #645cc3 0%, rgba(100, 92, 195, 0.75) 100%);
 }
 
 .section-promotions__list-item:nth-child(3) {
-  background: no-repeat 8% 15% url(/src/img/mobile.svg), linear-gradient(90deg, #ffc600 0%, rgba(255, 198, 0, 0.5) 100%);
+  background: no-repeat 8% 15% url(/img/mobile.svg), linear-gradient(90deg, #ffc600 0%, rgba(255, 198, 0, 0.5) 100%);
 }
 
 .section-promotions__list-item:nth-child(4) {
-  background: no-repeat 8% 15% url(/src/img/monitor.svg),
+  background: no-repeat 8% 15% url(/img/monitor.svg),
     linear-gradient(90deg, #fb4516 0%, rgba(251, 69, 22, 0.75) 100%);
   padding-top: 69px;
 }
 
 .section-promotions__list-item:nth-child(5) {
-  background: no-repeat 8% 15% url(/src/img/medal.svg),
+  background: no-repeat 8% 15% url(/img/medal.svg),
     linear-gradient(90deg, #5cd8b4 0%, rgba(92, 216, 180, 0.75) 100%);
   padding-top: 141px;
 }
 
 .section-promotions__list-item:nth-child(6) {
   flex-direction: column;
-  background: no-repeat 8% 15% url(/src/img/discount-circle.svg), linear-gradient(90deg, #d35cde 0%, #ff7bc4 100%);
+  background: no-repeat 8% 15% url(/img/discount-circle.svg), linear-gradient(90deg, #d35cde 0%, #ff7bc4 100%);
   padding-top: 141px;
 }
 
@@ -795,7 +795,7 @@ body {
   padding: 0px 0;
   width: 1920px;
   height: 948px;
-  background: no-repeat 18.5% 18.5% url(/src/img/VectorBG.svg), #f7f7f8;
+  background: no-repeat 18.5% 18.5% url(/img/VectorBG.svg), #f7f7f8;
 }
 
 .section-study__container {
@@ -832,7 +832,7 @@ body {
 .section-study__list-item:first-child {
   width: 300px;
   height: 350px;
-  background: no-repeat 11.3% 9.5% url(/src/img/circle.svg), #ffffff;
+  background: no-repeat 11.3% 9.5% url(/img/circle.svg), #ffffff;
   border-radius: 12px;
   padding-top: 171px;
   padding-left: 30px;
@@ -841,7 +841,7 @@ body {
 .section-study__list-item:nth-child(2) {
   width: 300px;
   height: 350px;
-  background: no-repeat 11.3% 9.5% url(/src/img/triangle.svg), #ffffff;
+  background: no-repeat 11.3% 9.5% url(/img/triangle.svg), #ffffff;
   border-radius: 12px;
   padding-top: 191px;
   padding-left: 30px;
@@ -850,7 +850,7 @@ body {
 .section-study__list-item:nth-child(3) {
   width: 300px;
   height: 350px;
-  background: no-repeat 11.3% 9.5% url(/src/img/rectangle.svg), #ffffff;
+  background: no-repeat 11.3% 9.5% url(/img/rectangle.svg), #ffffff;
   border-radius: 12px;
   padding-top: 191px;
   padding-left: 30px;
@@ -859,7 +859,7 @@ body {
 .section-study__list-item:nth-child(4) {
   width: 300px;
   height: 350px;
-  background: no-repeat 11.3% 9.5% url(/src/img/square.svg), #ffffff;
+  background: no-repeat 11.3% 9.5% url(/img/square.svg), #ffffff;
   border-radius: 12px;
   padding-top: 219px;
   padding-left: 30px;
@@ -869,7 +869,7 @@ body {
   position: relative;
   width: 300px;
   height: 350px;
-  background: no-repeat 11.3% 9.5% url(/src/img/circle.svg), #ffffff;
+  background: no-repeat 11.3% 9.5% url(/img/circle.svg), #ffffff;
   border-radius: 12px;
   padding-top: 191px;
   padding-left: 30px;
@@ -985,7 +985,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #141414;
-  background: no-repeat 0% 0% url(/src/img/SunDim.svg);
+  background: no-repeat 0% 0% url(/img/SunDim.svg);
   padding-left: 42px;
   padding-top: 3px;
   margin-bottom: 13.5px;
@@ -1017,7 +1017,7 @@ body {
   color: #141414;
   width: 297px;
   height: 56px;
-  background: no-repeat 6% 50% url(/src/img/play.svg), #ffffff;
+  background: no-repeat 6% 50% url(/img/play.svg), #ffffff;
   box-shadow: 8px 25px 90px rgba(0, 0, 0, 0.1);
   border-radius: 100px;
   text-align: center;
@@ -1051,7 +1051,7 @@ body {
   padding: 0px 0;
   width: 1920px;
   height: 797px;
-  background: no-repeat 9.9% 32.7% url(/src/img/Ellipse\ ending.svg), no-repeat 57.35% 66.9% url(/src/img/Saly-26.png),
+  background: no-repeat 9.9% 32.7% url(/img/Ellipse\ ending.svg), no-repeat 57.35% 66.9% url(/img/Saly-26.png),
     linear-gradient(90deg, #645cc3 0%, rgba(100, 92, 195, 0.75) 100%);
 }
 
@@ -1237,7 +1237,7 @@ body {
 }
 
 .footer__right-list-item:first-child {
-  background: no-repeat 0% 0% url(/src/img/App\ Store.png);
+  background: no-repeat 0% 0% url(/img/App\ Store.png);
   padding-right: 140px;
   margin-bottom: 80px;
   margin-right: 8px;
@@ -1245,7 +1245,7 @@ body {
 }
 
 .footer__right-list-item:last-child {
-  background: no-repeat 0% 0% url(/src/img/Google\ Play.png);
+  background: no-repeat 0% 0% url(/img/Google\ Play.png);
   margin-bottom: 80px;
   padding-right: 140px;
   margin-top: 1px;
