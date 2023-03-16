@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+
+	.shop {
+		display: flex;
+		align-items: center;
+	}
+	.shop > img {
+		position: relative;
+	}
+
+	.items {
+		height: 25px;
+		width: 25px;
+		border-radius: 50%;
+		background-color: black;
+		color: white;
+		text-align:center;
+		cursor: pointer;
+	}
+
+	input {
+		margin-left: 20px;
+		margin-right: 10px;
+	}
+	
+	.modal {
+		opacity: 0;
+		z-index: 1;
+		visibility: hidden;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.8);
+	}
+
+	.modal.active {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.modal__body {
+		min-height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 15px 10px;
+	}
+	
+	.modal__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+		position: relative;
+		background-color: #fff;
+		color: black;
+		width: 80%;
+		height: 130px;
+	}
+
+	.animation__card {
+		margin: 30px 0 0 30px;
+		perspective: 1000px;
+		transform-style: preserve-3d;
+		width: 500px;
+		height: 500px;
+	}
+
+	.animation__item {
+		background-color: orange;
+		width: 500px;
+		height: 500px;
+		transition: transform 0.2s;
+	}
+
+	.warning {
+		margin: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 24px;
+		color: white;
+		width: 300px;
+		height: 100px;
+		background-color: red;
+	}
+</style>
+<body>
+	<h1>
+		Бастун Андрей Артемович - Лаборатнорная работа №11
+	</h1>
+	<p>Задание 1</p>
+	<div class="shop">
+		<img src="./корзина.svg" alt="корзина" width="50px" height="50px">
+		<p class="counter">Кол-во 0</p>
+		<input type="button" data-counter value="в корзину">
+	</div>
+	<p>Задание 2</p>
+	<button class="modal__open">Открыть модальное окно</button>
+	<div class="modal" id="modal">
+		<div class="modal__body">
+			<div class="modal__content">
+				<p>Это модальное окно</p>
+				<button class="modal__close">Закрыть</button>
+			</div>
+		</div>
+	</div>
+	<p>Задание 3</p>
+	<div class="animation__card">
+		<div class="animation__item"></div>
+	</div>
+	<p>Задание 4</p>
+	<div class="warning">
+		Предупреждение!
+	</div>
+	<script>
+		let count = 0
+		document.addEventListener('click', function(e) {
+			let counter = document.querySelector('.counter')
+			if(e.target.dataset.counter != undefined) {
+				counter.textContent = `Кол-во ${++count}`
+				console.log(count)
+			}
+		})
+	</script>
+
+	<script src="../js/modal.js"></script>
+	<script src="../js/animation.js"></script>
+	
+	<script>
+		setTimeout(function(){
+			document.querySelector('.warning').style.display = 'none';
+		}, 3000);
+	</script>
+</body>
+</html>
